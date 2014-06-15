@@ -31,7 +31,7 @@ end
 
 The following steps can be done to get an access token:
 
-- Initialiaze the `Glass::Client` with your `client_id` and `client_secret`:
+- Initialize the `Glass::Client` with your `client_id` and `client_secret`:
 
 ```ruby
 client = Glass::Client.new(nil, client_id: 'foo', client_secret: 'bar')
