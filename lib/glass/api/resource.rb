@@ -53,9 +53,9 @@ module Glass::Api::Resource
 		end
 
 		def resource_path(id = nil)
-			url = "#{self.class.resource_name}"
-			url << "/#{id}" if id
-			url
+			path = "#{self.class.resource_name}"
+			path << "/#{id}" if id
+			path
 		end
 	end
 end

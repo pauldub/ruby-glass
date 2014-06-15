@@ -2,6 +2,9 @@
 
 Gemfile.lock
 
+# Ignore the local repl_helper.rb
+repl_helper.rb
+
 # And because this is Ruby, ignore the following
 #  (source: https://github.com/github/gitignore/blob/master/Ruby.gitignore):
 
