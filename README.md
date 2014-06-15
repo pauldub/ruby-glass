@@ -14,7 +14,6 @@ end
 
 ## Todo
 
-- Actually test that library works.
 - Write tests.
 - Document.
 
