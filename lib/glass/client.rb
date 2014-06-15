@@ -11,13 +11,15 @@ class Glass::Client
 
 	# Public: Create a new Mirror API client.
 	#
+	# "client_id" and "client_secret" are only required when performing 
+	# authorization with the client, otherwise
+	# only the "token" is required.
+	#
 	# token - A user access token.
 	# client_id - (optional) Application's client ID.
 	# client_secret - (optional) Application's client secret.
 	#
-	# "client_id" and "client_secret" are only required when performing 
-	# authorization with the client, otherwise
-	# only the "token" is required.
+	# Returns a Glass::Client bound to this token.
 	def initialize(token = nil, client_id: nil, client_secret: nil)
 		@client_id, @client_secret = client_id, client_secret
 

@@ -8,3 +8,7 @@ Rake::TestTask.new do |t|
 end
 
 task :default => :test
+
+require 'yard'
+
+YARD::Rake::YardocTask.new :doc

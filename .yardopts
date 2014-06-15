@@ -1,0 +1,6 @@
+--title "ruby-glass"
+--plugin tomdoc
+--markup-provider=redcarpet
+--markup=markdown
+lib/**/*.rb
+README.md LICENSE
