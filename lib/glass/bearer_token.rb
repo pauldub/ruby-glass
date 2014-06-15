@@ -1,5 +1,6 @@
 require 'faraday'
 
+# Internal: A Faraday middleware adding the access token to each request.
 class Glass::BearerToken < Faraday::Middleware
 	attr_reader :token
 

@@ -1,6 +1,9 @@
 require 'faraday'
 require 'faraday_middleware'
 
+# Public: The Mirror API client.
+#
+# It should be instanciated with the user's access token.
 class Glass::Client
 	attr_reader :base_uri, :conn
 
@@ -23,8 +26,24 @@ class Glass::Client
 		@timeline_api ||= Glass::Api::Timeline.new(self)
 	end
 
+	def subscriptions
+		@subscriptions_api ||= Glass::Api::Subscriptions.new(self)
+	end
+
 	def locations
 		@locations_api ||= Glass::Api::Locations.new(self)
+	end
+
+	def contacts
+		@contacts_api ||= Glass::Api::Contacts.new(self)
+	end
+
+	def accounts
+		@accounts_api ||= Glass::Api::Accounts.new(self)
+	end
+
+	def settings
+		@settings_api ||= Glass::Api::Settings.new(self)
 	end
 
 	def get(*args)
