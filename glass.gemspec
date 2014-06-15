@@ -8,7 +8,8 @@ Gem::Specification.new do |s|
   s.version       = Glass::VERSION
   s.authors       = ["Paul d'Hubert"]
   s.email         = ["paul@tymate.com"]
-  s.homepage      = "https://github.com/pauldub/glass"
+	s.license       = 'BSD-3'
+  s.homepage      = "https://github.com/pauldub/ruby-glass"
   s.summary       = "A Ruby Google Glass Mirror API client."
   s.description   = "A Ruby Google Glass Mirror API client."
 
