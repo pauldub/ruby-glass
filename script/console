@@ -1,0 +1,3 @@
+#!/bin/sh
+
+pry -I./lib -rglass
